@@ -103,28 +103,33 @@ html {
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
-  padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  color: gainsboro;
+
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
+  padding: 2em;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
-
+  flex-flow: row wrap;
 }
 
-
+.intro {
+    margin-bottom: 1.5em;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
   line-height: 1rem;
   background-color: transparent;
   height: auto;
-  width: 30%;
+  width: 28%;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -298,12 +303,20 @@ body {
     }
 }
 
-h1 { font-size: 1.5rem;}
+h1 { 
+    font-size: 2.5rem;
+ }
 
 h2 { 
      font-size: 1.2rem;
      color: gainsboro;
 }
+
+.intro {
+        font-family: Times, serif;
+
+}
+
 
 p { 
     font-size: 1rem; 
@@ -329,7 +342,7 @@ p {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
     .div-1, .div-2, .div-3 {
        flex-flow: column wrap;
        width: 90%;  
@@ -343,3 +356,10 @@ p {
         border: none; 
     }
 }
+
+.footer {
+    font-family: 'Source sans pro', sans-serif;
+    font-weight: 600;
+}
+
+
